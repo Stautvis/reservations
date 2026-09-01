@@ -32,6 +32,7 @@
       "version": "0.0.0",
       "dependencies": {
         "@utils/exception": "workspace:*",
+        "@utils/result": "workspace:*",
       },
     },
     "src/modules/account/application": {
