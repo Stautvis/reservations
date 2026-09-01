@@ -1,0 +1,14 @@
+{
+  "name": "reservations",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "src/**/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "1.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "7.0.2"
+  }
+}

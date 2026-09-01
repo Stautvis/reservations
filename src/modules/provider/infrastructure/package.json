@@ -1,0 +1,7 @@
+{
+  "name": "@infrastructure/provider",
+  "description": "",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true
+}
