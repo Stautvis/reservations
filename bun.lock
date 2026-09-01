@@ -38,6 +38,9 @@
     "src/modules/account/domain": {
       "name": "@domain/account",
       "version": "0.0.0",
+      "dependencies": {
+        "@domain/core": "workspace:*",
+      },
     },
     "src/modules/account/infrastructure": {
       "name": "@infrastructure/account",
