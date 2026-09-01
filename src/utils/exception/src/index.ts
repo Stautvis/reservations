@@ -1,4 +1,4 @@
-import type { IException } from "../interfaces";
+export interface IException extends Error {}
 
 export abstract class Exception implements IException {
   public name = this.constructor.name;
@@ -8,7 +8,3 @@ export abstract class Exception implements IException {
     this.metadata = metadata;
   }
 }
-
-export class SystemException extends Exception {}
-
-export class DomainException extends SystemException {}

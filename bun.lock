@@ -30,6 +30,9 @@
     "src/core/domain": {
       "name": "@domain/core",
       "version": "0.0.0",
+      "dependencies": {
+        "@utils/exception": "workspace:*",
+      },
     },
     "src/modules/account/application": {
       "name": "@application/account",
@@ -77,6 +80,9 @@
     "src/utils/result": {
       "name": "@utils/result",
       "version": "0.0.0",
+      "peerDependencies": {
+        "@utils/exception": "workspace:*",
+      },
     },
   },
   "packages": {

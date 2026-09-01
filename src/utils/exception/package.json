@@ -3,5 +3,10 @@
   "description": "",
   "version": "0.0.0",
   "type": "module",
-  "private": true
+  "private": true,
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  }
 }

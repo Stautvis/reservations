@@ -1,10 +1,13 @@
-export class Result<T, E extends Error = Error> {
+import type { Exception } from "@utils/exception";
+import { ResultErrorAccessException, ResultException } from "../exceptions";
+
+export class Result<T, E extends Exception = Exception> {
   private readonly _value: T | null;
   private readonly _error: E | null;
 
   private constructor(value: T | null, error: E | null) {
     if (value !== null && error !== null) {
-      throw new Error('Result cannot have both value and error');
+      throw new ResultException("Result cannot have both value and error");
     }
 
     this._value = value;
@@ -15,7 +18,7 @@ export class Result<T, E extends Error = Error> {
     return new Result<T, never>(value, null);
   }
 
-  public static fail<E extends Error>(error: E): Result<never, E> {
+  public static fail<E extends Exception>(error: E): Result<never, E> {
     return new Result<never, E>(null, error);
   }
 
@@ -36,7 +39,7 @@ export class Result<T, E extends Error = Error> {
 
   public get error(): E {
     if (this._error === null) {
-      throw new Error('Cannot get error from a successful Result');
+      throw new ResultErrorAccessException();
     }
     return this._error;
   }
