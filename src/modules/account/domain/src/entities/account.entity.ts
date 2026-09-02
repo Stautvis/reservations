@@ -1,6 +1,6 @@
 import { AggregateRoot } from "@domain/core";
-import type { IAccount, IAccountCreate } from "../interfaces";
 import { AccountCreatedEvent } from "../events";
+import type { IAccount, IAccountCreate } from "../interfaces";
 
 export class Account extends AggregateRoot<IAccount> {
   public static create(properties: IAccountCreate): Account {
@@ -10,9 +10,9 @@ export class Account extends AggregateRoot<IAccount> {
       surname: properties.surname,
       email: properties.email,
       password: properties.password,
-    })
+    });
 
-    account.raiseEvent(new AccountCreatedEvent())
+    account.raiseEvent(new AccountCreatedEvent());
 
     return account;
   }

@@ -1,1 +1,1 @@
-export * from "./result.class"
+export * from "./result.class";

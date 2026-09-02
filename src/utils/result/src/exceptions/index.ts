@@ -1,1 +1,1 @@
-export * from "./result.exception"
+export * from "./result.exception";

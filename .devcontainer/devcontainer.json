@@ -3,5 +3,10 @@
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["oven.bun-vscode", "biomejs.biome"]
+    }
   }
 }

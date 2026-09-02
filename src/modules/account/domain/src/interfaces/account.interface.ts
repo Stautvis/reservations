@@ -7,4 +7,5 @@ export interface IAccount extends IEntity {
   password: string;
 }
 
-export interface IAccountCreate extends Pick<IAccount, "name" | "surname" | "email" | "password"> {}
+export interface IAccountCreate
+  extends Pick<IAccount, "name" | "surname" | "email" | "password"> {}

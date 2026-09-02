@@ -1,1 +1,1 @@
-export interface IValueObject<T> {}
+export interface IValueObject<_T> {}
