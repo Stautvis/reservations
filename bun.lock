@@ -27,18 +27,24 @@
     "src/core/application": {
       "name": "@application/core",
       "version": "0.0.0",
+      "dependencies": {
+        "@domain/core": "workspace:*",
+      },
     },
     "src/core/domain": {
       "name": "@domain/core",
       "version": "0.0.0",
       "dependencies": {
         "@utils/exception": "workspace:*",
-        "@utils/result": "workspace:*",
       },
     },
     "src/modules/account/application": {
       "name": "@application/account",
       "version": "0.0.0",
+      "dependencies": {
+        "@application/core": "workspace:*",
+        "@domain/account": "workspace:*",
+      },
     },
     "src/modules/account/domain": {
       "name": "@domain/account",

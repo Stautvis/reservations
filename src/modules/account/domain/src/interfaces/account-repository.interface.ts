@@ -1,6 +1,6 @@
-import type { DomainResult, IRepository } from "@domain/core";
-import type { IAccount } from "./account.interface";
+import type { IRepository } from "@domain/core";
+import type { Account } from "../entities";
 
-export interface IAccountRepository extends IRepository<IAccount> {
-  getByEmail(email: string): DomainResult<IAccount>;
+export interface IAccountRepository extends IRepository<Account> {
+  getByEmail(email: string): Promise<Account | null>;
 }

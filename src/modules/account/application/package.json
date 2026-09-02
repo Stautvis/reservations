@@ -3,5 +3,14 @@
   "description": "",
   "version": "0.0.0",
   "type": "module",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@application/core": "workspace:*",
+    "@domain/account": "workspace:*"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  }
 }
