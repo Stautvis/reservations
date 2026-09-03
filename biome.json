@@ -28,6 +28,13 @@
                 },
                 "match": "I(.+)",
                 "formats": ["PascalCase"]
+              },
+              {
+                "selector": {
+                  "kind": "typeParameter"
+                },
+                "match": "T(.+)",
+                "formats": ["PascalCase"]
               }
             ]
           }

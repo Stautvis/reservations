@@ -2,6 +2,9 @@
   "name": "reservations",
   "type": "module",
   "private": true,
+  "scripts": {
+    "lint": "biome check"
+  },
   "workspaces": [
     "src/**/*"
   ],
