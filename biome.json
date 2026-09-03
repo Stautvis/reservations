@@ -17,6 +17,22 @@
     "enabled": true,
     "rules": {
       "preset": "recommended",
+      "style": {
+        "useNamingConvention": {
+          "level": "error",
+          "options": {
+            "conventions": [
+              {
+                "selector": {
+                  "kind": "interface"
+                },
+                "match": "I(.+)",
+                "formats": ["PascalCase"]
+              }
+            ]
+          }
+        }
+      },
       "suspicious": {
         "noEmptyInterface": "off"
       }

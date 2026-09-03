@@ -27,9 +27,6 @@
     "src/core/application": {
       "name": "@application/core",
       "version": "0.0.0",
-      "dependencies": {
-        "@domain/core": "workspace:*",
-      },
     },
     "src/core/domain": {
       "name": "@domain/core",
