@@ -8,6 +8,9 @@
   },
 
   // Typescript settings
+  "js/ts.preferences.importModuleSpecifierEnding": "minimal",
+  "js/ts.preferences.importModuleSpecifier": "project-relative",
+
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
