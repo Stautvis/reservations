@@ -35,6 +35,26 @@
                 },
                 "match": "T(.+)",
                 "formats": ["PascalCase"]
+              },
+              {
+                "selector": {
+                  "kind": "class"
+                },
+                "formats": ["PascalCase"]
+              },
+              {
+                "selector": {
+                  "kind": "classMember",
+                  "modifiers": ["private"]
+                },
+                "match": "_(.+)",
+                "formats": ["camelCase"]
+              },
+              {
+                "selector": {
+                  "kind": "classMember"
+                },
+                "formats": ["camelCase"]
               }
             ]
           }
