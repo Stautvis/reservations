@@ -18,6 +18,12 @@
     "rules": {
       "preset": "recommended",
       "style": {
+        "useConsistentMemberAccessibility": {
+          "level": "error",
+          "options": {
+            "accessibility": "explicit"
+          }
+        },
         "useNamingConvention": {
           "level": "error",
           "options": {
