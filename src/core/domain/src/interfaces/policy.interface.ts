@@ -1,3 +1,5 @@
+import type { IActor } from "./actor.interface";
+
 export interface IPolicy {
-  check(actor: unknown): boolean;
+  check(actor: IActor): boolean;
 }

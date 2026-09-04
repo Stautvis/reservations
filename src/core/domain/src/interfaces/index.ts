@@ -1,3 +1,4 @@
+export * from "./actor.interface";
 export * from "./aggregate-root.interface";
 export * from "./entity.interface";
 export * from "./event.interface";

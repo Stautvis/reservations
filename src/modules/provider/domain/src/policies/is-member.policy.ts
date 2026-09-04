@@ -1,4 +1,4 @@
-import { Policy } from "@domain/core";
+import { type IActor, Policy } from "@domain/core";
 import type { Provider } from "../entities";
 
 export class IsMemberPolicy extends Policy {
@@ -6,7 +6,7 @@ export class IsMemberPolicy extends Policy {
     super();
   }
 
-  public check(actor: unknown): boolean {
-    return this._provider.isMember(actor as string);
+  public check(actor: IActor): boolean {
+    return this._provider.isMember(actor.id);
   }
 }
