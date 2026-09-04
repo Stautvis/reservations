@@ -1,3 +1,3 @@
 export interface IPolicy {
-  check(): boolean;
+  check(actor: unknown): boolean;
 }
