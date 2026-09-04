@@ -14,7 +14,7 @@ export class Provider extends AggregateRoot<IProvider> {
   }
 
   public hireEmployee(accountId: string): void {
-    if (new IsMemberPolicy(this).check(accountId)) {
+    if (new IsMemberPolicy(this).check({ id: accountId })) {
       throw new DomainException("Account is already a member of this provider");
     }
   }
