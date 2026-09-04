@@ -1,8 +1,8 @@
-import { AggregateRoot } from "@domain/core";
+import { AggregateRoot, type IActor } from "@domain/core";
 import { AccountCreatedEvent } from "../events";
 import type { IAccount, IAccountCreate } from "../interfaces";
 
-export class Account extends AggregateRoot<IAccount> {
+export class Account extends AggregateRoot<IAccount> implements IActor {
   public static create(properties: IAccountCreate): Account {
     const account = new Account({
       id: crypto.randomUUID(),
