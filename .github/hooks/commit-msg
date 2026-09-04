@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+bun run lint:commit --edit "$1"
