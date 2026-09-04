@@ -5,6 +5,8 @@
   "type": "module",
   "private": true,
   "dependencies": {
+    "@utils/exception": "workspace:*",
+    "@utils/result": "workspace:*",
     "@domain/core": "workspace:*"
   }
 }
